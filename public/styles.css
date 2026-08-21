@@ -37,6 +37,10 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
+  /* The off-canvas mobile nav is position:fixed at right:-100%, and fixed
+     elements escape body's overflow-x:hidden. Without this the page scrolls
+     ~10px sideways on a 360px screen. No position:sticky here to break. */
+  overflow-x: hidden;
 }
 
 body {
@@ -67,6 +71,18 @@ a {
 
 ul {
   list-style: none;
+}
+
+/* Icon system (Lucide-derived line icons, referenced from the sprite in index.html) */
+.icon {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
 }
 
 .container {
@@ -101,7 +117,10 @@ ul {
 
 /* Buttons */
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   padding: 12px 30px;
   border-radius: 50px;
   font-weight: 600;
@@ -379,35 +398,37 @@ ul {
 }
 
 .hero-stats {
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 60px;
+  gap: 40px;
   margin-top: 40px;
   padding: 30px;
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   border: 1px solid var(--card-border);
-  display: inline-flex;
 }
 
 .stat-item {
-  text-align: center;
+  text-align: left;
 }
 
 .stat-number {
   display: block;
   font-size: 2.5rem;
+  line-height: 1.1;
   font-weight: 700;
   color: var(--text-primary);
   font-family: var(--font-heading);
 }
 
 .stat-label {
+  display: block;
+  margin-top: 6px;
   color: var(--text-secondary);
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 0.8rem;
+  line-height: 1.4;
 }
 
 .scroll-indicator {
@@ -508,7 +529,9 @@ ul {
 }
 
 .highlight-icon {
-  font-size: 1.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  color: var(--accent-primary);
 }
 
 .highlight-text {
@@ -572,7 +595,8 @@ ul {
 }
 
 .category-icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: var(--accent-primary);
   background: rgba(255, 255, 255, 0.05);
   width: 50px;
   height: 50px;
@@ -580,6 +604,7 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 12px;
+  flex-shrink: 0;
 }
 
 .skill-category h3 {
@@ -689,6 +714,80 @@ ul {
   opacity: 0.6;
 }
 
+/* Flagship project treatment */
+.project-flagship {
+  border-color: rgba(0, 242, 255, 0.35);
+  background: linear-gradient(
+    145deg,
+    rgba(0, 242, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0.02) 60%
+  );
+}
+
+.badge-flagship {
+  background: linear-gradient(
+    135deg,
+    var(--accent-tertiary),
+    var(--accent-secondary)
+  );
+}
+
+.project-facts {
+  list-style: none;
+  margin: 0 0 25px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-facts li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.project-facts li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--card-border);
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  word-break: break-word;
+}
+
+.project-links a:hover {
+  color: var(--text-primary);
+}
+
+.project-links .icon {
+  width: 1rem;
+  height: 1rem;
+}
+
 /* Experience Section */
 .experience {
   padding: var(--section-padding);
@@ -763,6 +862,7 @@ ul {
 .company {
   color: var(--accent-primary);
   font-weight: 600;
+  overflow-wrap: anywhere;
 }
 
 .duration {
@@ -789,6 +889,61 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+/* Education Section */
+.education {
+  padding: var(--section-padding);
+  background: #0d0d0d;
+}
+
+/* Certifications Section */
+.certifications {
+  padding: var(--section-padding);
+}
+
+.cert-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.cert-list li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.cert-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+}
+
+.cert-list strong {
+  color: var(--text-primary);
+}
+
+.cert-meta {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.cert-list + .cert-meta {
+  margin: 18px 0 0;
 }
 
 /* Research Section */
@@ -822,10 +977,13 @@ ul {
 }
 
 .research-icon {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  display: inline-block;
-  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.1));
+  width: 2.5rem;
+  height: 2.5rem;
+  stroke-width: 1.5;
+  color: var(--accent-primary);
+  display: block;
+  margin: 0 auto 20px;
+  filter: drop-shadow(0 0 20px rgba(0, 242, 255, 0.25));
 }
 
 .research-card h3 {
@@ -894,7 +1052,8 @@ ul {
 }
 
 .method-icon {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  color: var(--accent-primary);
   background: rgba(255, 255, 255, 0.05);
   width: 60px;
   height: 60px;
@@ -902,6 +1061,7 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .method-details h4 {
@@ -970,6 +1130,32 @@ ul {
   letter-spacing: 1px;
 }
 
+/* Touch devices: hover states stick after a tap, and the translateX ones push
+   content past the viewport edge. Neutralise them where there is no real pointer. */
+@media (hover: none) {
+  .timeline-item:hover .timeline-content,
+  .contact-method:hover,
+  .project-card:hover,
+  .skill-category:hover,
+  .research-card:hover,
+  .highlight-item:hover,
+  .btn:hover {
+    transform: none;
+  }
+}
+
+/* Respect reduced-motion: the orbs and morphing avatar are pure decoration */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
   .hero-name {
@@ -1010,6 +1196,14 @@ ul {
   .hero-image img {
     width: 280px;
     height: 280px;
+  }
+
+  /* Without this the off-canvas menu has no visible control to open it —
+     .hamburger is display:none globally and was never turned back on. */
+  .hamburger {
+    display: block;
+    position: relative;
+    z-index: 1001;
   }
 
   .nav-menu {
@@ -1055,6 +1249,33 @@ ul {
     padding: 20px;
     margin-top: 30px;
     width: 100%;
+  }
+
+  .stat-item {
+    text-align: center;
+  }
+
+  .hero-cta {
+    flex-wrap: wrap;
+  }
+
+  .timeline-header .duration {
+    margin-left: 0;
+  }
+
+  .project-card {
+    padding: 25px;
+  }
+
+  .contact-method {
+    gap: 15px;
+    padding: 16px;
+  }
+
+  .method-icon {
+    width: 46px;
+    height: 46px;
+    font-size: 1.2rem;
   }
 
   .section-title {

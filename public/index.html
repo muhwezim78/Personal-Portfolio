@@ -4,19 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="portfolio.svg?v=1" />
-    <meta name="description" content="Mark Muhwezi - Software Engineer, Android Developer & Telecom Innovator. Specializing in mobile development, backend systems, and network engineering.">
-    <meta name="keywords" content="Mark Muhwezi, Software Engineer, Android Developer, Telecom Engineer, Mobile Development, Backend Development, Network Engineering">
+    <meta name="description" content="Mark Muhwezi - Telecommunications Engineer building ISP infrastructure and the software that runs it. Cambium microwave links, FTTH provisioning, and a live multi-tenant billing platform serving hotspot operators in Uganda and Nigeria.">
+    <meta name="keywords" content="Mark Muhwezi, Telecommunications Engineer, Network Infrastructure, Backend Systems, MikroTik, Cambium, FreeRADIUS, Rust, Uganda">
     <meta name="author" content="Mark Muhwezi">
-    <meta property="og:title" content="Mark Muhwezi - Software Engineer & Telecom Innovator">
-    <meta property="og:description" content="Building innovative solutions in mobile development, telecom systems, and cloud infrastructure.">
+    <meta property="og:title" content="Mark Muhwezi - Telecommunications Engineer">
+    <meta property="og:description" content="ISP infrastructure and the software that runs it. Cambium microwave links, FTTH provisioning, and a live billing platform serving hotspot operators in Uganda and Nigeria.">
     <meta property="og:type" content="website">
-    <title>Mark Muhwezi - Software Engineer & Telecom Innovator</title>
+    <title>Mark Muhwezi - Telecommunications Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Icon sprite: Lucide-derived, ISC licensed -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+        <symbol id="i-router" viewBox="0 0 24 24"><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6.01 18H6"/><path d="M10.01 18H10"/><path d="M15 10v4"/><path d="M17.84 7.17a4 4 0 0 0-5.66 0"/><path d="M20.66 4.34a8 8 0 0 0-11.31 0"/></symbol>
+        <symbol id="i-server" viewBox="0 0 24 24"><rect width="20" height="8" x="2" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><path d="M6 6h.01"/><path d="M6 18h.01"/></symbol>
+        <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+        <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+        <symbol id="i-radio" viewBox="0 0 24 24"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"/><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"/><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"/><path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"/></symbol>
+        <symbol id="i-cpu" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></symbol>
+        <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+        <symbol id="i-card" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+        <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+        <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></symbol>
+        <symbol id="i-x" viewBox="0 0 24 24"><path d="M4 4l11.733 16h4.267l-11.733-16z"/><path d="M4 20l6.768-6.768m2.46-2.46l6.772-6.772"/></symbol>
+        <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+        <symbol id="i-award" viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></symbol>
+        <symbol id="i-badge-check" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></symbol>
+        <symbol id="i-microscope" viewBox="0 0 24 24"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></symbol>
+        <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></symbol>
+        <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+        <symbol id="i-play-store" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+        <symbol id="i-graduation" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12.5V17c3 2.5 9 2.5 12 0v-4.5"/><path d="M22 10v6"/></symbol>
+    </svg>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
@@ -27,7 +54,7 @@
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -49,27 +76,32 @@
             <div class="hero-text">
                 <p class="hero-greeting">Hello, I'm</p>
                 <h1 class="hero-name">Mark Muhwezi</h1>
-                <h2 class="hero-title">Software and Telecommunications Engineer</h2>
+                <h2 class="hero-title">Telecommunications Engineer &mdash; Network Infrastructure &amp; Backend Systems</h2>
                 <p class="hero-description">
-                    Building cutting-edge mobile applications, robust backend systems, and innovative telecom solutions. 
-                    Passionate about creating technology that makes a difference.
+                    I build ISP infrastructure and the software that runs it. Cambium microwave links and FTTH
+                    provisioning in the field; a live multi-tenant billing and authentication platform serving
+                    hotspot operators in Uganda and Nigeria. Comfortable from RF alignment and RouterOS
+                    configuration through to Rust services, PostgreSQL and mobile money APIs.
                 </p>
                 <div class="hero-cta">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="Muhwezi_Mark_CV_2026.pdf" class="btn btn-secondary" download>
+                        <svg class="icon"><use href="#i-download"/></svg>
+                        Download CV
+                    </a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat-item">
-                        <span class="stat-number">12+</span>
-                        <span class="stat-label">Projects</span>
+                        <span class="stat-number">7</span>
+                        <span class="stat-label">Hotspot businesses live<br>on my platform</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">5+</span>
-                        <span class="stat-label">Technologies</span>
+                        <span class="stat-number">30</span>
+                        <span class="stat-label">Microwave links<br>installed in 2025</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">∞</span>
-                        <span class="stat-label">Innovation</span>
+                        <span class="stat-number">1,134</span>
+                        <span class="stat-label">GitHub contributions<br>in the past year</span>
                     </div>
                 </div>
             </div>
@@ -89,44 +121,46 @@
             <div class="about-content">
                 <div class="about-text">
                     <p class="about-intro">
-                        I'm a passionate software engineering student and engineer at <strong>Liquid Intelligent Technologies</strong> and <strong>Blossom Tech Solutions</strong>, 
-                        where I blend my expertise in mobile development, backend systems, and network engineering 
-                        to create innovative solutions that bridge technology and telecommunications.
+                        I'm a telecommunications engineer based in Kampala. I spend my days provisioning fibre
+                        subscribers at <strong>Savanna Fibre</strong>, and the rest of my time building and running
+                        <strong>TerraConnect Uganda</strong> &mdash; the billing and authentication platform seven
+                        hotspot businesses depend on to get paid.
                     </p>
                     <p>
-                        My journey in technology spans multiple domains: from building sophisticated Android applications 
-                        using <strong>Java and Kotlin</strong>, to architecting robust backend systems with 
-                        <strong>Python, Rust (Axum), and Flask</strong>, and optimizing telecom networks with 
-                        cutting-edge routing technologies.
+                        Three years of field engineering came first: installing, aligning and troubleshooting
+                        <strong>Cambium ePMP and PTP 550</strong> microwave links on Liquid Intelligent Technologies'
+                        network as a Japotech contractor. Thirty client links commissioned in 2025, nineteen fault
+                        escalations resolved. That work is why the software I write actually fits how a small ISP
+                        operates.
                     </p>
                     <p>
-                        I specialize in creating <strong>fraud prevention systems</strong>, <strong>IoT solutions</strong>, 
-                        and <strong>telecom optimization platforms</strong>. My work includes developing MM Assist 
-                        (a Mobile Money Fraud Prevention app), custom video players, USSD automation systems, and 
-                        pioneering research in telecom security through the TOSS (Telecom Optimization & Security System) project.
+                        On the software side I work in <strong>Rust and Node.js on PostgreSQL</strong>, deployed as
+                        Docker services on Ubuntu, with <strong>FreeRADIUS</strong> wired to MikroTik hotspot routers
+                        over <strong>WireGuard</strong> tunnels for centralised authentication and accounting. Payments
+                        run through <strong>pawaPay</strong> for MTN MoMo and Airtel Money &mdash; which meant passing a
+                        multi-round provider due diligence covering AML/CFT policy, operator agreements and audit trails.
                     </p>
                     <p>
-                        Beyond coding, I'm deeply involved in <strong>network infrastructure</strong>, working with 
-                        Mikrotik, TP-Link, and Cambium routers, implementing RADIUS authentication, hotspot systems, 
-                        and cloud-based solutions on AWS. I also explore AI/ML applications, building predictive 
-                        analytics bots for sports and data-driven insights.
+                        I also build client-facing software: a router management and billing system plus a Flutter app
+                        for <strong>QuickNet Networks</strong> in Nigeria, and a native Android music player published
+                        to Google Play.
                     </p>
                     <div class="about-highlights">
                         <div class="highlight-item">
-                            <span class="highlight-icon">🚀</span>
-                            <span class="highlight-text">Innovation-Driven Development</span>
+                            <svg class="icon highlight-icon"><use href="#i-radio"/></svg>
+                            <span class="highlight-text">Microwave &amp; FTTH Field Engineering</span>
                         </div>
                         <div class="highlight-item">
-                            <span class="highlight-icon">🔒</span>
-                            <span class="highlight-text">Security & Fraud Prevention</span>
+                            <svg class="icon highlight-icon"><use href="#i-router"/></svg>
+                            <span class="highlight-text">MikroTik, FreeRADIUS &amp; WireGuard</span>
                         </div>
                         <div class="highlight-item">
-                            <span class="highlight-icon">🌐</span>
-                            <span class="highlight-text">Full-Stack Expertise</span>
+                            <svg class="icon highlight-icon"><use href="#i-server"/></svg>
+                            <span class="highlight-text">Rust &amp; PostgreSQL Backends</span>
                         </div>
                         <div class="highlight-item">
-                            <span class="highlight-icon">📡</span>
-                            <span class="highlight-text">Telecom Engineering</span>
+                            <svg class="icon highlight-icon"><use href="#i-card"/></svg>
+                            <span class="highlight-text">Mobile Money Integration</span>
                         </div>
                     </div>
                 </div>
@@ -137,123 +171,111 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
+            <h2 class="section-title">Skills &amp; Technologies</h2>
             <div class="skills-grid">
-                <!-- Mobile Development -->
                 <div class="skill-category">
                     <div class="category-header">
-                        <span class="category-icon">📱</span>
-                        <h3>Mobile Development</h3>
+                        <span class="category-icon"><svg class="icon"><use href="#i-radio"/></svg></span>
+                        <h3>Networking</h3>
                     </div>
                     <div class="skill-tags">
+                        <span class="skill-tag">Cambium ePMP</span>
+                        <span class="skill-tag">Cambium PTP 550</span>
+                        <span class="skill-tag">cnMaestro</span>
+                        <span class="skill-tag">MikroTik RouterOS</span>
+                        <span class="skill-tag">Hotspot &amp; PPPoE</span>
+                        <span class="skill-tag">FreeRADIUS</span>
+                        <span class="skill-tag">WireGuard</span>
+                        <span class="skill-tag">IP Addressing &amp; Subnetting</span>
+                        <span class="skill-tag">CGNAT Mitigation</span>
+                        <span class="skill-tag">Link Optimisation</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon"><svg class="icon"><use href="#i-server"/></svg></span>
+                        <h3>Backend &amp; Data</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Rust</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">REST API Design</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Ubuntu Server</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon"><svg class="icon"><use href="#i-code"/></svg></span>
+                        <h3>Web &amp; Mobile</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">HTML/CSS</span>
                         <span class="skill-tag">Java</span>
                         <span class="skill-tag">Kotlin</span>
-                        <span class="skill-tag">Android SDK</span>
-                        <span class="skill-tag">Room DB</span>
-                        <span class="skill-tag">ExoPlayer</span>
-                        <span class="skill-tag">Retrofit</span>
+                        <span class="skill-tag">Native Android</span>
+                        <span class="skill-tag">Flutter</span>
                     </div>
                 </div>
 
-                <!-- Backend Development -->
                 <div class="skill-category">
                     <div class="category-header">
-                        <span class="category-icon">⚙️</span>
-                        <h3>Backend Development</h3>
+                        <span class="category-icon"><svg class="icon"><use href="#i-cloud"/></svg></span>
+                        <h3>Cloud, Payments &amp; APIs</h3>
                     </div>
                     <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Rust (Axum)</span>
-                        <span class="skill-tag">Flask</span>
                         <span class="skill-tag">Firebase</span>
-                        <span class="skill-tag">REST APIs</span>
-                        <span class="skill-tag">Authentication</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">pawaPay (MoMo &amp; Airtel)</span>
+                        <span class="skill-tag">Africa's Talking</span>
+                        <span class="skill-tag">Resend</span>
+                        <span class="skill-tag">DNS &amp; Domains</span>
+                        <span class="skill-tag">Push Notifications</span>
                     </div>
                 </div>
 
-                <!-- Cloud & Infrastructure -->
                 <div class="skill-category">
                     <div class="category-header">
-                        <span class="category-icon">☁️</span>
-                        <h3>Cloud & Infrastructure</h3>
+                        <span class="category-icon"><svg class="icon"><use href="#i-shield"/></svg></span>
+                        <h3>Security</h3>
                     </div>
                     <div class="skill-tags">
-                        <span class="skill-tag">AWS EC2</span>
-                        <span class="skill-tag">Cloud Functions</span>
-                        <span class="skill-tag">Firebase Cloud</span>
-                        <span class="skill-tag">Notifications</span>
-                        <span class="skill-tag">PDF Generation</span>
+                        <span class="skill-tag">Network Threat Modelling</span>
+                        <span class="skill-tag">Security Onion</span>
+                        <span class="skill-tag">Nmap</span>
+                        <span class="skill-tag">WireGuard</span>
                     </div>
                 </div>
 
-                <!-- Network Engineering -->
                 <div class="skill-category">
                     <div class="category-header">
-                        <span class="category-icon">🌐</span>
-                        <h3>Network Engineering</h3>
+                        <span class="category-icon"><svg class="icon"><use href="#i-layers"/></svg></span>
+                        <h3>Field &amp; Design Tools</h3>
                     </div>
                     <div class="skill-tags">
-                        <span class="skill-tag">Mikrotik</span>
-                        <span class="skill-tag">TP-Link</span>
-                        <span class="skill-tag">Cambium</span>
-                        <span class="skill-tag">RADIUS</span>
-                        <span class="skill-tag">Hotspot Systems</span>
-                        <span class="skill-tag">Network Optimization</span>
+                        <span class="skill-tag">TEMS Investigation</span>
+                        <span class="skill-tag">Walk &amp; Drive Test</span>
+                        <span class="skill-tag">Cisco Packet Tracer</span>
+                        <span class="skill-tag">AutoCAD</span>
+                        <span class="skill-tag">SolidWorks</span>
+                        <span class="skill-tag">EdrawMax</span>
                     </div>
                 </div>
 
-                <!-- IoT & Electronics -->
                 <div class="skill-category">
                     <div class="category-header">
-                        <span class="category-icon">🔌</span>
-                        <h3>IoT & Electronics</h3>
+                        <span class="category-icon"><svg class="icon"><use href="#i-cpu"/></svg></span>
+                        <h3>Embedded</h3>
                     </div>
                     <div class="skill-tags">
-                        <span class="skill-tag">Nucleo F411RE</span>
-                        <span class="skill-tag">IoT Concepts</span>
-                        <span class="skill-tag">Embedded Systems</span>
-                        <span class="skill-tag">USSD Automation</span>
-                    </div>
-                </div>
-
-                <!-- Design & Tools -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <span class="category-icon">🎨</span>
-                        <h3>Design & Tools</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Adobe Illustrator</span>
-                        <span class="skill-tag">HTML/CSS</span>
-                        <span class="skill-tag">Dreamweaver</span>
-                        <span class="skill-tag">UI/UX Design</span>
-                    </div>
-                </div>
-
-                <!-- Engineering Tools -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <span class="category-icon">🔧</span>
-                        <h3>Engineering Tools</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">MATLAB</span>
-                        <span class="skill-tag">Multisim</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Linux</span>
-                    </div>
-                </div>
-
-                <!-- AI/ML -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <span class="category-icon">🤖</span>
-                        <h3>AI & Machine Learning</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Predictive Analytics</span>
-                        <span class="skill-tag">ML Bots</span>
-                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">ESP32</span>
+                        <span class="skill-tag">Raspberry Pi</span>
+                        <span class="skill-tag">STM32</span>
                     </div>
                 </div>
             </div>
@@ -265,193 +287,201 @@
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
-                <!-- Project 1: MM Assist -->
+                <!-- TerraConnect Uganda -->
+                <div class="project-card project-flagship">
+                    <div class="project-header">
+                        <h3>TerraConnect Uganda</h3>
+                        <span class="project-badge badge-flagship">Flagship &middot; Live</span>
+                    </div>
+                    <p class="project-description">
+                        A multi-tenant B2B platform giving ISP and WiFi hotspot operators billing, subscriber
+                        management, captive portals, voucher management, and mobile money collections and payouts.
+                        Rust and Node.js on PostgreSQL, deployed as Docker services on a production Ubuntu server,
+                        with FreeRADIUS wired to MikroTik hotspot routers over WireGuard tunnels for centralised
+                        authentication and accounting. React dashboard on the front.
+                    </p>
+                    <ul class="project-facts">
+                        <li>Seven live hotspot businesses across Kampala, from site survey and router provisioning through operator training and billing support</li>
+                        <li>pawaPay integration for MTN MoMo and Airtel Money, cleared through a multi-round provider due diligence covering AML/CFT policy, operator agreements and audit trails</li>
+                        <li>Also my Kyambogo final year project, addressing the limitations of CGNAT for small operators</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">Rust</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">FreeRADIUS</span>
+                        <span class="tech-tag">MikroTik</span>
+                        <span class="tech-tag">WireGuard</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">pawaPay</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://terraconnect-uganda.web.app" target="_blank" rel="noopener">
+                            <svg class="icon"><use href="#i-external"/></svg>terraconnect-uganda.web.app
+                        </a>
+                    </div>
+                </div>
+
+                <!-- QuickNet Networks -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>QuickNet Networks</h3>
+                        <span class="project-badge">Client &middot; Nigeria</span>
+                    </div>
+                    <p class="project-description">
+                        Router management and billing system with a Flutter cross-platform application, delivered
+                        for QuickNet Networks in Nigeria. Subscriber and voucher management against MikroTik
+                        hardware, with the mobile app giving operators control away from a desk.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MikroTik</span>
+                        <span class="tech-tag">Billing Systems</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://quicknetwifi.com" target="_blank" rel="noopener">
+                            <svg class="icon"><use href="#i-external"/></svg>quicknetwifi.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TFOMS -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>TFOMS</h3>
+                        <span class="project-badge">Field Operations</span>
+                    </div>
+                    <p class="project-description">
+                        Telecom Field Operations Management System &mdash; an operations console for running a field
+                        engineering team. Work orders move through dispatch, submission and verification; equipment is
+                        assigned and tracked against technicians; attendance and payroll are recorded alongside
+                        geolocated field data; and invoicing rolls up into revenue and expense reporting. React and
+                        Vite front end against a REST API backend.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Vite</span>
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">Firebase Hosting</span>
+                        <span class="tech-tag">Geolocation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://field-operation-management.web.app" target="_blank" rel="noopener">
+                            <svg class="icon"><use href="#i-external"/></svg>field-operation-management.web.app
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blox Music Player -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Blox Music Player</h3>
+                        <span class="project-badge">Google Play</span>
+                    </div>
+                    <p class="project-description">
+                        Native Android music player published to the Google Play Store. Local library playback with
+                        a custom player UI, built in Kotlin against the Android media stack.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">Native Android</span>
+                        <span class="tech-tag">Media Playback</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.muhwezi.bloxmusicplayer" target="_blank" rel="noopener">
+                            <svg class="icon"><use href="#i-play-store"/></svg>Google Play
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MM Assist -->
                 <div class="project-card">
                     <div class="project-header">
                         <h3>MM Assist</h3>
                         <span class="project-badge">Mobile Security</span>
                     </div>
                     <p class="project-description">
-                        Advanced Mobile Money Fraud Prevention application built with Java/Kotlin. 
-                        Features real-time transaction monitoring, fraud detection algorithms, and 
-                        secure authentication mechanisms to protect users from financial fraud.
+                        Mobile money fraud prevention application for Android, built in Java and Kotlin. Transaction
+                        monitoring and secure authentication aimed at the social-engineering scams common to MoMo
+                        users in Uganda.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">Java</span>
                         <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">Security</span>
-                        <span class="tech-tag">ML Detection</span>
-                    </div>
-                </div>
-
-                <!-- Project 2: TOSS -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>TOSS</h3>
-                        <span class="project-badge">Research</span>
-                    </div>
-                    <p class="project-description">
-                        Telecom Optimization & Security System - A comprehensive research project 
-                        focused on optimizing telecom networks and enhancing security protocols. 
-                        Implements advanced routing algorithms and security measures.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Network Engineering</span>
-                        <span class="tech-tag">Security</span>
-                        <span class="tech-tag">Optimization</span>
-                    </div>
-                </div>
-
-                <!-- Project 3: Custom Video Player -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Custom Video Player & Editor</h3>
-                        <span class="project-badge">Media</span>
-                    </div>
-                    <p class="project-description">
-                        Feature-rich video player built with ExoPlayer, including custom controls, 
-                        editing tools, story features, and voice-note integration. Optimized for 
-                        performance and user experience.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Kotlin</span>
-                        <span class="tech-tag">ExoPlayer</span>
-                        <span class="tech-tag">Media Processing</span>
                         <span class="tech-tag">Android</span>
                     </div>
                 </div>
 
-                <!-- Project 4: USSD Automation -->
+                <!-- USSD Automation -->
                 <div class="project-card">
                     <div class="project-header">
                         <h3>USSD Automation System</h3>
                         <span class="project-badge">Telecom</span>
                     </div>
                     <p class="project-description">
-                        Automated USSD interaction system for telecom services. Streamlines 
-                        mobile money transactions, airtime purchases, and service activations 
-                        through intelligent automation.
+                        Automated USSD interaction system for telecom services, handling mobile money transactions,
+                        airtime purchases and service activations without manual menu navigation.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Java</span>
                         <span class="tech-tag">Android</span>
-                        <span class="tech-tag">Automation</span>
-                        <span class="tech-tag">Telecom</span>
+                        <span class="tech-tag">Africa's Talking</span>
+                        <span class="tech-tag">USSD</span>
                     </div>
                 </div>
 
-                <!-- Project 5: Hotspot Management -->
+                <!-- Custom Video Player -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Hotspot Management System</h3>
-                        <span class="project-badge">Network</span>
+                        <h3>Custom Video Player</h3>
+                        <span class="project-badge">Media</span>
                     </div>
                     <p class="project-description">
-                        Comprehensive hotspot management platform with RADIUS authentication, 
-                        voucher generation, user management, and real-time monitoring. Supports 
-                        Mikrotik and other router platforms.
+                        Android video player built on ExoPlayer with custom playback controls, plus story and
+                        voice-note features layered on top. Room DB for local state, Firebase for sync.
                     </p>
                     <div class="project-tech">
-                        <span class="tech-tag">Rust (Axum)</span>
-                        <span class="tech-tag">RADIUS</span>
-                        <span class="tech-tag">Mikrotik</span>
-                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">ExoPlayer</span>
+                        <span class="tech-tag">Room DB</span>
+                        <span class="tech-tag">Firebase</span>
                     </div>
                 </div>
 
-                <!-- Project 6: IoT Data Caching Device -->
+                <!-- IoT Data Caching Device -->
                 <div class="project-card">
                     <div class="project-header">
                         <h3>IoT Data Caching Device</h3>
-                        <span class="project-badge">IoT</span>
+                        <span class="project-badge">Embedded</span>
                     </div>
                     <p class="project-description">
-                        Innovative IoT device for internet data caching and optimization. 
-                        Built with Nucleo F411RE microcontroller, featuring intelligent 
-                        caching algorithms and network optimization.
+                        Embedded device for caching internet data at the edge, built on an STM32 Nucleo F411RE.
+                        Aimed at cutting repeat upstream fetches on expensive or congested links.
                     </p>
                     <div class="project-tech">
-                        <span class="tech-tag">Nucleo F411RE</span>
-                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">STM32</span>
                         <span class="tech-tag">Embedded C</span>
                         <span class="tech-tag">Networking</span>
                     </div>
                 </div>
 
-                <!-- Project 7: Voice Note System -->
+                <!-- TOSS -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Voice Note System</h3>
-                        <span class="project-badge">Mobile</span>
+                        <h3>TOSS</h3>
+                        <span class="project-badge">Research</span>
                     </div>
                     <p class="project-description">
-                        Advanced voice recording and playback system with audio processing, 
-                        cloud storage integration, and real-time synchronization. Features 
-                        waveform visualization and editing capabilities.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Kotlin</span>
-                        <span class="tech-tag">Audio Processing</span>
-                        <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">Room DB</span>
-                    </div>
-                </div>
-
-                <!-- Project 8: AI Sports Predictor -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>AI Sports Analytics Bot</h3>
-                        <span class="project-badge">AI/ML</span>
-                    </div>
-                    <p class="project-description">
-                        Machine learning bot for predicting football match outcomes and 
-                        providing detailed analytics. Uses historical data, team statistics, 
-                        and advanced algorithms for accurate predictions.
+                        Telecom Optimization &amp; Security System &mdash; exploratory work on network performance
+                        optimisation and security protocol design, using Python for analysis and modelling.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">Data Analysis</span>
-                        <span class="tech-tag">Predictive Models</span>
-                    </div>
-                </div>
-
-                <!-- Project 9: Cloud Backend System -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Cloud Backend Infrastructure</h3>
-                        <span class="project-badge">Backend</span>
-                    </div>
-                    <p class="project-description">
-                        Scalable backend system deployed on AWS EC2 with authentication, 
-                        cloud functions, push notifications, and PDF generation. Supports 
-                        multiple client applications with RESTful APIs.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python/Flask</span>
-                        <span class="tech-tag">AWS EC2</span>
-                        <span class="tech-tag">REST API</span>
-                        <span class="tech-tag">Cloud Functions</span>
-                    </div>
-                </div>
-
-                <!-- Project 10: Story Feature System -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Story Feature System</h3>
-                        <span class="project-badge">Mobile</span>
-                    </div>
-                    <p class="project-description">
-                        Instagram-like story feature with media upload, viewing analytics, 
-                        expiration handling, and interactive elements. Includes image/video 
-                        processing and real-time updates.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Kotlin</span>
-                        <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">Media Processing</span>
-                        <span class="tech-tag">Real-time Sync</span>
+                        <span class="tech-tag">Network Analysis</span>
+                        <span class="tech-tag">Security</span>
                     </div>
                 </div>
             </div>
@@ -467,29 +497,30 @@
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3>Engineer</h3>
-                            <span class="company">Liquid Intelligent Technologies</span>
-                            <span class="duration">Present</span>
+                            <h3>Founder &amp; Lead Engineer</h3>
+                            <span class="company">Blossom Tech Solutions / TerraConnect Uganda</span>
+                            <span class="duration">2023 &ndash; Present</span>
                         </div>
                         <div class="timeline-description">
                             <p>
-                                Leading network infrastructure projects and telecom optimization initiatives. 
-                                Responsible for router configuration and management (Mikrotik, TP-Link, Cambium), 
-                                network system design, and telecom service optimization.
+                                Building and operating TerraConnect Uganda, a multi-tenant B2B platform giving ISP and
+                                WiFi hotspot operators billing, subscriber management, captive portals, voucher
+                                management, and mobile money collections and payouts.
                             </p>
                             <ul class="experience-highlights">
-                                <li>Designed and implemented hotspot management systems with RADIUS authentication</li>
-                                <li>Optimized network performance across multiple sites, improving reliability by 40%</li>
-                                <li>Developed automated monitoring and alerting systems for network infrastructure</li>
-                                <li>Implemented security protocols and fraud prevention measures</li>
-                                <li>Managed cloud infrastructure on AWS for telecom services</li>
+                                <li>Architected the backend in Rust and Node.js on PostgreSQL, deployed as Docker services on a production Ubuntu server, with FreeRADIUS integrated to MikroTik hotspot routers over WireGuard tunnels for centralised authentication and accounting</li>
+                                <li>Integrated pawaPay for MTN MoMo and Airtel Money, completing a multi-round payment provider due diligence process covering AML/CFT policy, operator agreements and audit trails</li>
+                                <li>Deployed and support seven live hotspot businesses across Kampala &mdash; site survey, router provisioning, operator training and billing support</li>
+                                <li>Delivered a router management and billing system plus a Flutter application for QuickNet Networks, Nigeria</li>
+                                <li>Published a native Android music player to Google Play and built client web platforms hosted on AWS</li>
                             </ul>
                             <div class="experience-tech">
-                                <span class="tech-tag">Mikrotik</span>
-                                <span class="tech-tag">Network Engineering</span>
-                                <span class="tech-tag">RADIUS</span>
-                                <span class="tech-tag">AWS</span>
-                                <span class="tech-tag">System Design</span>
+                                <span class="tech-tag">Rust</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">FreeRADIUS</span>
+                                <span class="tech-tag">MikroTik</span>
+                                <span class="tech-tag">Docker</span>
                             </div>
                         </div>
                     </div>
@@ -499,15 +530,20 @@
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3>Intern</h3>
-                            <span class="company">Japotech Solutions</span>
-                            <span class="duration">Internship</span>
+                            <h3>FTTH Provisioning Engineer</h3>
+                            <span class="company">Savanna Fibre Limited, Kampala</span>
+                            <span class="duration">2026 &ndash; Present</span>
                         </div>
                         <div class="timeline-description">
                             <p>
-                                Gained practical experience in telecommunications and network solutions. 
-                                Assisted in technical support and network maintenance tasks.
+                                Provisioning fibre-to-the-home subscribers for a live Kampala ISP: installation, ONT
+                                configuration, activation and fault resolution at the customer premises.
                             </p>
+                            <div class="experience-tech">
+                                <span class="tech-tag">FTTH</span>
+                                <span class="tech-tag">ONT Configuration</span>
+                                <span class="tech-tag">Fault Resolution</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -516,14 +552,45 @@
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3>Intern</h3>
-                            <span class="company">Innovis Telecom Services International</span>
-                            <span class="duration">Internship</span>
+                            <h3>PMP Field Engineer</h3>
+                            <span class="company">Japotech Solutions Uganda Ltd &mdash; contracted to Liquid Intelligent Technologies</span>
+                            <span class="duration">2023 &ndash; Jun 2026</span>
                         </div>
                         <div class="timeline-description">
                             <p>
-                                Participated in telecom service delivery and infrastructure projects. 
-                                Learned about industry standards and operational workflows in a multinational telecom environment.
+                                Delivered field engineering on Liquid Intelligent Technologies' network as a Japotech
+                                contractor, joining as an intern and being recruited into the role.
+                            </p>
+                            <ul class="experience-highlights">
+                                <li>Installed 30 client links on Cambium ePMP and PTP 550 point-to-point and point-to-multipoint systems during 2025 &mdash; site survey, mounting, alignment and commissioning</li>
+                                <li>Resolved 19 microwave link fault escalations, diagnosing interference, alignment drift, power and configuration issues to restore customer service</li>
+                                <li>Carried out telecom site installations, walk tests and drive tests, and produced network survey documentation for the projects team</li>
+                                <li>Awarded the company Certificate of Excellence for Integrity, 2024</li>
+                            </ul>
+                            <div class="experience-tech">
+                                <span class="tech-tag">Cambium ePMP</span>
+                                <span class="tech-tag">PTP 550</span>
+                                <span class="tech-tag">cnMaestro</span>
+                                <span class="tech-tag">Drive Test</span>
+                                <span class="tech-tag">Link Optimisation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Intern &mdash; Field Maintenance &amp; Transmission</h3>
+                            <span class="company">Innovis Telecom Services International Ltd</span>
+                            <span class="duration">May &ndash; Jul 2025</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>
+                                Completed a six-week structured rotation across field maintenance, transmission, data
+                                centre maintenance, network optimisation and drive test, and health and safety
+                                compliance, based at the Airtel Uganda MSC in Bugolobi.
                             </p>
                         </div>
                     </div>
@@ -533,75 +600,52 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="education" style="padding: var(--section-padding); background: #0d0d0d;">
+    <section id="education" class="education">
         <div class="container">
             <h2 class="section-title">Education</h2>
             <div class="timeline">
-                <!-- University -->
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3>B.Eng in Telecommunications Engineering</h3>
+                            <h3>BSc Telecommunications Engineering</h3>
                             <span class="company">Kyambogo University</span>
-                            <span class="duration">2022 - 2026</span>
+                            <span class="duration">2022 &ndash; 2026</span>
                         </div>
                         <div class="timeline-description">
                             <p>
-                                Pursuing a 4-year Bachelor's degree. Focusing on telecommunications principles, 
-                                network engineering, and software integration.
+                                Degree completed, awaiting final results and graduation. Final year project:
+                                <strong>TerraConnect Uganda</strong> &mdash; an automated router management system
+                                addressing the limitations of CGNAT. Supervised by Dr. Mugerwa Dickson.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <!-- High School (A-Level) -->
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3>Advanced Level (UACE)</h3>
-                            <span class="company">Standard College School</span>
-                            <span class="duration">S5 - S6</span>
+                            <h3>Uganda Advanced Certificate of Education</h3>
+                            <span class="company">Standard College Ntungamo</span>
+                            <span class="duration">2020</span>
                         </div>
                         <div class="timeline-description">
-                            <p>Completed Advanced Level education focusing on Science and Mathematics.</p>
+                            <p>Principal passes in Mathematics, Physics and Chemistry.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- High School (O-Level) -->
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3>Ordinary Level (UCE)</h3>
-                            <span class="company">Kitante Hill School & Makerere College School</span>
-                            <span class="duration">S1 - S4</span>
+                            <h3>Uganda Certificate of Education</h3>
+                            <span class="company">Kitante Hill School</span>
+                            <span class="duration">2018</span>
                         </div>
                         <div class="timeline-description">
-                            <p>
-                                Completed Ordinary Level education. Attended Makerere College School for S1 
-                                and Kitante Hill School for S2 to S4.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Primary School -->
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Primary Education</h3>
-                            <span class="company">Kiwatule Parents & St Francis</span>
-                            <span class="duration">Baby Class - P7</span>
-                        </div>
-                        <div class="timeline-description">
-                            <p>
-                                Completed Primary Leaving Examinations (PLE) at Kiwatule Parents Preparatory School (P3-P7). 
-                                Started early education at St Francis Primary School (Baby Class - P1).
-                            </p>
+                            <p>Division 1, ten subjects passed.</p>
                         </div>
                     </div>
                 </div>
@@ -609,39 +653,47 @@
         </div>
     </section>
 
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements" style="padding: var(--section-padding);">
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
         <div class="container">
-            <h2 class="section-title">Achievements</h2>
+            <h2 class="section-title">Certifications &amp; Training</h2>
             <div class="skills-grid">
                 <div class="skill-category">
                     <div class="category-header">
-                        <span class="category-icon">🏆</span>
-                        <h3>Innovation Awards</h3>
+                        <span class="category-icon"><svg class="icon"><use href="#i-badge-check"/></svg></span>
+                        <h3>Cambium Networks Learning</h3>
                     </div>
-                    <p style="color: var(--text-secondary); margin-bottom: 15px;">
-                        Recognized for outstanding contributions in telecom optimization and fraud prevention systems.
-                    </p>
+                    <p class="cert-meta">Vendor training completed 2024</p>
+                    <ul class="cert-list">
+                        <li><strong>ePMP track</strong> &mdash; Installation Training for Force 180, 190, 200 and 300-25; Access Point Device Configuration; Link Optimization; Force 300-25 solution training</li>
+                        <li><strong>PTP 550 track</strong> &mdash; Solution Overview; Configuring PTP 550; Configuring Antenna Gain; Understanding Metrics; Remote Management with cnMaestro</li>
+                    </ul>
                 </div>
+
                 <div class="skill-category">
                     <div class="category-header">
-                        <span class="category-icon">🚀</span>
-                        <h3>Project Milestones</h3>
+                        <span class="category-icon"><svg class="icon"><use href="#i-graduation"/></svg></span>
+                        <h3>Programme Certificates</h3>
                     </div>
-                    <p style="color: var(--text-secondary); margin-bottom: 15px;">
-                        Successfully deployed 12+ production systems including MM Assist and TOSS.
-                    </p>
+                    <ul class="cert-list">
+                        <li>Internship Programme Completion Certificate &mdash; Innovis Telecom Services International Ltd, 2025</li>
+                        <li>Telecom site installation, point-to-multipoint installation, walk test and drive test &mdash; Japotech Solutions</li>
+                        <li>Website development, hosting and native Android development &mdash; Blossom Tech Solutions</li>
+                    </ul>
                 </div>
+
                 <div class="skill-category">
                     <div class="category-header">
-                        <span class="category-icon">📜</span>
-                        <h3>Certifications</h3>
+                        <span class="category-icon"><svg class="icon"><use href="#i-award"/></svg></span>
+                        <h3>Recognition</h3>
                     </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Network Engineering</span>
-                        <span class="skill-tag">Android Development</span>
-                        <span class="skill-tag">Cloud Architecture</span>
-                    </div>
+                    <ul class="cert-list">
+                        <li>Certificate of Excellence, Company Value of Integrity &mdash; Japotech Solutions, 2024</li>
+                    </ul>
+                    <p class="cert-meta">
+                        1,134 open source contributions over the past year across 55+ repositories, including network
+                        backends, MikroTik integration tooling and trading systems.
+                    </p>
                 </div>
             </div>
         </div>
@@ -650,65 +702,64 @@
     <!-- Research Section -->
     <section id="research" class="research">
         <div class="container">
-            <h2 class="section-title">Research & Innovation</h2>
+            <h2 class="section-title">Research &amp; Innovation</h2>
             <div class="research-grid">
                 <div class="research-card">
-                    <div class="research-icon">🔬</div>
-                    <h3>TOSS - Telecom Optimization & Security System</h3>
+                    <svg class="icon research-icon"><use href="#i-microscope"/></svg>
+                    <h3>Final Year Project &mdash; CGNAT &amp; Router Management</h3>
                     <p>
-                        Pioneering research project focused on optimizing telecom network performance 
-                        and implementing advanced security protocols. Addresses challenges in network 
-                        efficiency, fraud prevention, and service quality optimization.
+                        An automated router management system addressing the limitations of Carrier-Grade NAT for
+                        small operators, who lose direct addressability of customer equipment behind a shared public
+                        IP. Shipped as TerraConnect Uganda. Kyambogo University, supervised by Dr. Mugerwa Dickson.
                     </p>
                     <div class="research-areas">
-                        <span class="area-tag">Network Optimization</span>
-                        <span class="area-tag">Security Protocols</span>
-                        <span class="area-tag">Fraud Prevention</span>
+                        <span class="area-tag">CGNAT Mitigation</span>
+                        <span class="area-tag">WireGuard Tunnelling</span>
+                        <span class="area-tag">RouterOS Automation</span>
                     </div>
                 </div>
 
                 <div class="research-card">
-                    <div class="research-icon">🌐</div>
-                    <h3>IoT & Embedded Systems</h3>
+                    <svg class="icon research-icon"><use href="#i-shield"/></svg>
+                    <h3>Network Security &amp; Threat Modelling</h3>
                     <p>
-                        Exploring innovative IoT solutions including internet data caching devices, 
-                        smart automation systems, and embedded electronics using Nucleo F411RE 
-                        microcontrollers. Focus on practical applications in telecom and networking.
+                        Threat modelling for small ISP networks using Security Onion and Nmap, with WireGuard for
+                        encrypted management access to customer-premises routers. Focused on the attack surface a
+                        multi-tenant billing platform exposes when it holds keys to other people's networks.
                     </p>
                     <div class="research-areas">
-                        <span class="area-tag">IoT Development</span>
-                        <span class="area-tag">Embedded Systems</span>
-                        <span class="area-tag">Smart Devices</span>
+                        <span class="area-tag">Security Onion</span>
+                        <span class="area-tag">Nmap</span>
+                        <span class="area-tag">Threat Modelling</span>
                     </div>
                 </div>
 
                 <div class="research-card">
-                    <div class="research-icon">🤖</div>
-                    <h3>AI/ML Applications</h3>
+                    <svg class="icon research-icon"><use href="#i-cpu"/></svg>
+                    <h3>Embedded &amp; IoT</h3>
                     <p>
-                        Developing machine learning models for predictive analytics, including sports 
-                        outcome prediction and data-driven insights. Exploring applications of AI in 
-                        fraud detection and network optimization.
+                        Work on ESP32, Raspberry Pi and STM32 platforms, including an edge device for caching internet
+                        data to cut repeat upstream fetches on expensive or congested links.
                     </p>
                     <div class="research-areas">
-                        <span class="area-tag">Machine Learning</span>
-                        <span class="area-tag">Predictive Analytics</span>
-                        <span class="area-tag">Data Science</span>
+                        <span class="area-tag">ESP32</span>
+                        <span class="area-tag">Raspberry Pi</span>
+                        <span class="area-tag">STM32</span>
                     </div>
                 </div>
 
                 <div class="research-card">
-                    <div class="research-icon">📱</div>
-                    <h3>Mobile Security & Fraud Prevention</h3>
+                    <svg class="icon research-icon"><use href="#i-card"/></svg>
+                    <h3>Mobile Money Integration</h3>
                     <p>
-                        Research into mobile money fraud prevention systems, secure authentication 
-                        mechanisms, and real-time threat detection. Development of MM Assist and 
-                        related security applications.
+                        Practical work on MTN MoMo and Airtel Money collections and payouts through pawaPay, including
+                        reconciliation, audit trails and the AML/CFT policy work a payment provider requires before it
+                        will let you move other people's money.
                     </p>
                     <div class="research-areas">
-                        <span class="area-tag">Mobile Security</span>
-                        <span class="area-tag">Fraud Detection</span>
-                        <span class="area-tag">Authentication</span>
+                        <span class="area-tag">pawaPay</span>
+                        <span class="area-tag">AML/CFT</span>
+                        <span class="area-tag">Reconciliation</span>
                     </div>
                 </div>
             </div>
@@ -722,58 +773,58 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <p class="contact-intro">
-                        I'm always interested in hearing about new projects, opportunities, and collaborations. 
-                        Whether you have a question or just want to say hi, feel free to reach out!
+                        Open to work on ISP infrastructure, network engineering and backend systems. If you're building
+                        something in that space, or you run a network that needs sorting out, get in touch.
                     </p>
                     <div class="contact-methods">
                         <div class="contact-method">
-                            <span class="method-icon">📧</span>
+                            <span class="method-icon"><svg class="icon"><use href="#i-mail"/></svg></span>
                             <div class="method-details">
                                 <h4>Email</h4>
                                 <a href="mailto:muhwezim78@gmail.com">muhwezim78@gmail.com</a>
                             </div>
                         </div>
                         <div class="contact-method">
-                            <span class="method-icon">📱</span>
+                            <span class="method-icon"><svg class="icon"><use href="#i-phone"/></svg></span>
                             <div class="method-details">
                                 <h4>Phone / WhatsApp</h4>
+                                <p>+256 702 006 181</p>
                                 <p>+256 757 478 708 (WhatsApp)</p>
-                                <p>0702 006 181 (Mobile)</p>
                             </div>
                         </div>
                         <div class="contact-method">
-                            <span class="method-icon">💼</span>
+                            <span class="method-icon"><svg class="icon"><use href="#i-linkedin"/></svg></span>
                             <div class="method-details">
                                 <h4>LinkedIn</h4>
-                                <a href="https://www.linkedin.com/in/mark-muhwezi-51374729a" target="_blank">Mark Muhwezi</a>
+                                <a href="https://www.linkedin.com/in/mark-muhwezi-51374729a" target="_blank" rel="noopener">Mark Muhwezi</a>
                             </div>
                         </div>
                         <div class="contact-method">
-                            <span class="method-icon">💻</span>
+                            <span class="method-icon"><svg class="icon"><use href="#i-github"/></svg></span>
                             <div class="method-details">
                                 <h4>GitHub</h4>
-                                <a href="https://github.com/muhwezim78" target="_blank">github.com/muhwezim78</a>
+                                <a href="https://github.com/muhwezim78" target="_blank" rel="noopener">github.com/muhwezim78</a>
                             </div>
                         </div>
                         <div class="contact-method">
-                            <span class="method-icon">📸</span>
+                            <span class="method-icon"><svg class="icon"><use href="#i-instagram"/></svg></span>
                             <div class="method-details">
                                 <h4>Instagram</h4>
-                                <a href="https://www.instagram.com/its_muhwezi/" target="_blank">@its_muhwezi</a>
+                                <a href="https://www.instagram.com/its_muhwezi/" target="_blank" rel="noopener">@its_muhwezi</a>
                             </div>
                         </div>
                         <div class="contact-method">
-                            <span class="method-icon">✖️</span>
+                            <span class="method-icon"><svg class="icon"><use href="#i-x"/></svg></span>
                             <div class="method-details">
                                 <h4>X (Twitter)</h4>
-                                <a href="https://x.com/its_muhwezi" target="_blank">@its_muhwezi</a>
+                                <a href="https://x.com/its_muhwezi" target="_blank" rel="noopener">@its_muhwezi</a>
                             </div>
                         </div>
                         <div class="contact-method">
-                            <span class="method-icon">🎵</span>
+                            <span class="method-icon"><svg class="icon"><use href="#i-music"/></svg></span>
                             <div class="method-details">
                                 <h4>TikTok</h4>
-                                <a href="https://www.tiktok.com/@its_muhwezi" target="_blank">@its_muhwezi</a>
+                                <a href="https://www.tiktok.com/@its_muhwezi" target="_blank" rel="noopener">@its_muhwezi</a>
                             </div>
                         </div>
                     </div>
@@ -803,8 +854,8 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Mark Muhwezi. All rights reserved.</p>
-                <p class="footer-tagline">Building the future, one line of code at a time.</p>
+                <p>&copy; 2026 Mark Muhwezi. All rights reserved.</p>
+                <p class="footer-tagline">ISP infrastructure, and the software that runs it.</p>
             </div>
         </div>
     </footer>
