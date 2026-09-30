@@ -8,11 +8,6 @@
   --accent-primary: #00f2ff; /* Cyan */
   --accent-secondary: #7000ff; /* Purple */
   --accent-tertiary: #ff0055; /* Pink */
-  --gradient-main: linear-gradient(
-    135deg,
-    var(--accent-primary),
-    var(--accent-secondary)
-  );
   --glass-shine: rgba(255, 255, 255, 0.1);
 
   /* Typography */
@@ -95,10 +90,7 @@ ul {
   font-size: 2.5rem;
   text-align: center;
   margin: 0 auto 60px;
-  background: var(--gradient-main);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-primary);
   position: relative;
   display: table;
 }
@@ -111,7 +103,7 @@ ul {
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background: var(--gradient-main);
+  background: var(--accent-primary);
   border-radius: 2px;
 }
 
@@ -135,8 +127,8 @@ ul {
 }
 
 .btn-primary {
-  background: var(--gradient-main);
-  color: white;
+  background: var(--accent-primary);
+  color: var(--bg-color);
   border: none;
   box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
 }
@@ -188,10 +180,7 @@ ul {
   font-family: var(--font-heading);
   font-size: 1.8rem;
   font-weight: 800;
-  background: var(--gradient-main);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--accent-primary);
 }
 
 .nav-menu {
@@ -249,60 +238,6 @@ ul {
   position: relative;
   overflow: hidden;
   padding-top: 160px;
-}
-
-.hero-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.gradient-orb {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.4;
-  animation: float 10s infinite ease-in-out;
-}
-
-.orb-1 {
-  width: 400px;
-  height: 400px;
-  background: var(--accent-primary);
-  top: -100px;
-  left: -100px;
-  animation-delay: 0s;
-}
-
-.orb-2 {
-  width: 500px;
-  height: 500px;
-  background: var(--accent-secondary);
-  bottom: -100px;
-  right: -100px;
-  animation-delay: 2s;
-}
-
-.orb-3 {
-  width: 300px;
-  height: 300px;
-  background: var(--accent-tertiary);
-  top: 40%;
-  left: 40%;
-  animation-delay: 4s;
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(30px, -30px);
-  }
 }
 
 .hero-content {
@@ -370,10 +305,7 @@ ul {
   font-size: 5rem;
   line-height: 1.1;
   margin-bottom: 10px;
-  background: linear-gradient(to right, #fff, #a1a1aa);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-primary);
 }
 
 .hero-title {
@@ -560,29 +492,9 @@ ul {
   overflow: hidden;
 }
 
-.skill-category::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(
-    circle at top right,
-    rgba(0, 242, 255, 0.1),
-    transparent 50%
-  );
-  opacity: 0;
-  transition: var(--transition-smooth);
-}
-
 .skill-category:hover {
   transform: translateY(-10px);
   border-color: rgba(0, 242, 255, 0.3);
-}
-
-.skill-category:hover::before {
-  opacity: 1;
 }
 
 .category-header {
@@ -675,12 +587,8 @@ ul {
 }
 
 .project-badge {
-  background: linear-gradient(
-    135deg,
-    var(--accent-primary),
-    var(--accent-secondary)
-  );
-  color: white;
+  background: var(--accent-primary);
+  color: var(--bg-color);
   padding: 5px 12px;
   border-radius: 12px;
   font-size: 0.75rem;
@@ -717,19 +625,12 @@ ul {
 /* Flagship project treatment */
 .project-flagship {
   border-color: rgba(0, 242, 255, 0.35);
-  background: linear-gradient(
-    145deg,
-    rgba(0, 242, 255, 0.06) 0%,
-    rgba(255, 255, 255, 0.02) 60%
-  );
+  background: rgba(0, 242, 255, 0.04);
 }
 
 .badge-flagship {
-  background: linear-gradient(
-    135deg,
-    var(--accent-tertiary),
-    var(--accent-secondary)
-  );
+  background: var(--accent-tertiary);
+  color: var(--text-primary);
 }
 
 .project-facts {
@@ -959,11 +860,7 @@ ul {
 }
 
 .research-card {
-  background: linear-gradient(
-    145deg,
-    rgba(255, 255, 255, 0.03) 0%,
-    rgba(255, 255, 255, 0.01) 100%
-  );
+  background: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 20px;
   padding: 30px;
@@ -1144,7 +1041,7 @@ ul {
   }
 }
 
-/* Respect reduced-motion: the orbs and morphing avatar are pure decoration */
+/* Respect reduced-motion: the morphing avatar is pure decoration */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

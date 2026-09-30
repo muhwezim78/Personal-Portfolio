@@ -138,22 +138,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 1500);
     });
   }
-
-  // Hero Parallax Effect
-  const hero = document.querySelector(".hero");
-  const orbs = document.querySelectorAll(".gradient-orb");
-
-  if (hero && window.innerWidth > 768) {
-    hero.addEventListener("mousemove", (e) => {
-      const x = e.clientX / window.innerWidth;
-      const y = e.clientY / window.innerHeight;
-
-      orbs.forEach((orb, index) => {
-        const speed = (index + 1) * 20;
-        const xOffset = (x - 0.5) * speed;
-        const yOffset = (y - 0.5) * speed;
-        orb.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
-      });
-    });
-  }
 });

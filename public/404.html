@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/svg+xml" href="portfolio.svg?v=1" />
-    <title>Page Not Found &mdash; Mark Muhwezi</title>
+    <title>Page Not Found | Mark Muhwezi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
@@ -31,23 +31,6 @@
         overflow: hidden;
         position: relative;
       }
-      .orb {
-        position: absolute;
-        border-radius: 50%;
-        filter: blur(100px);
-        opacity: 0.35;
-        z-index: 0;
-      }
-      .orb-1 {
-        width: 400px; height: 400px;
-        background: var(--accent-primary);
-        top: -120px; left: -120px;
-      }
-      .orb-2 {
-        width: 460px; height: 460px;
-        background: var(--accent-secondary);
-        bottom: -140px; right: -140px;
-      }
       #message {
         position: relative;
         z-index: 1;
@@ -65,10 +48,7 @@
         font-weight: 700;
         line-height: 1;
         margin-bottom: 12px;
-        background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: var(--accent-primary);
       }
       #message h1 {
         font-family: "Space Grotesk", sans-serif;
@@ -83,10 +63,10 @@
       }
       #message a {
         display: inline-block;
-        background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+        background: var(--accent-primary);
         text-transform: uppercase;
         text-decoration: none;
-        color: #fff;
+        color: var(--bg-color);
         padding: 13px 30px;
         border-radius: 50px;
         font-family: "Space Grotesk", sans-serif;
@@ -114,8 +94,6 @@
     </style>
   </head>
   <body>
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
     <div id="message">
       <h2>404</h2>
       <h1>Page Not Found</h1>
